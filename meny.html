@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Themed Page</title>
+    <link rel="stylesheet" href="meny-styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/om_oss.html">about us</a></li>
+          <li><a href="/" aria-current="page">meny</a></li>
+          <li><a href="#section3">Services</a></li>
+          <li><a href="#section4">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      
+      <section id="section1" class="content-section">beskrivelse + råvarer + selvlagingsmetode equipment</section><!--hvorfor vises ikke denne????????????????????-->
+      <div class="popup" onclick="popupM()"><p>a</p>
+        <span class="popuptext" id="myPopup"><h1> Meny </h1> 
+          <div class='topMB'> </div>
+          <div class='M.I.C'> </div>
+           </span>
+      </div>
+      <section id="section2" class="content-section">main retter</section>
+      <section id="section3" class="content-section">forretter</section><!--prob obselite med hvordan resturant gimmiken virker-->
+      <section id="section4" class="content-section">deserer</section>
+    </main> 
+    <footer>
+      <p>© 2025 Your Website. All Rights Reserved.</p>
+    </footer>
+    <script>//ser ut til å kunn virke i script tag
+    function popupM() {
+      const popup = document.getElementById("myPopup");
+      console.log('button virker')
+      popup.classList.toggle("show");
+    }
+    </script>
+  </body>
+</html>
