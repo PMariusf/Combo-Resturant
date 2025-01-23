@@ -61,3 +61,9 @@ document.getElementById('returnHome').addEventListener('click', function() {
 
 // Load orders when page loads
 document.addEventListener('DOMContentLoaded', loadOrderHistory);
+
+
+// Redirect to the main page when the button is clicked
+document.getElementById('returnHome').addEventListener('click', function() {
+  window.location.href = 'index.html';  // Replace 'index.html' with your main page filename
+});
