@@ -71,7 +71,7 @@ body {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .navbar ul {
     display: none;
     flex-direction: column;
@@ -94,7 +94,7 @@ body {
   font-family: "Italianno", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 4.5em; 
+  font-size: 4em; 
   font-weight: bold;
   margin: 0 auto;
   max-width: 800px; 

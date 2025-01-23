@@ -7,11 +7,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <title>Order and Table Placement</title>
-  <link rel="stylesheet" href="/Css/order.css">
+  <link rel="stylesheet" href="order.css">
 </head>
 <body>
   <header>
-    <img class="logo_img" src="/bilder/mainlogopng.png" alt="Logo">
+    <img class="logo_img" src="/bilder/Group 22.png" alt="Logo">
     <h1>Restaurant Order System</h1>
   </header>
 
@@ -23,24 +23,34 @@
       <label for="table">Choose Table:</label>
       <select id="table" name="table" required>
         <option value="">Select Table</option>
-        <option value="1">Table 1 2 seter</option>
+        <option value="1">Table 1 - 2 seater</option>
         <option value="2">Table 2 - 4/6</option>
-        <option value="3">Table 3 - Storre</option>
-        <option valute="4">Quiet zone</option>
+        <option value="3">Table 3 - Large</option>
+        <option value="4">Quiet Zone</option>
       </select>
-        <label for="order">Select Your Order:</label>
+
+      <label for="order">Select Your Order:</label>
       <select id="order" name="order" required>
         <option value="">Select Order</option>
         <option value="pizza">Roukett</option>
         <option value="burger">Foundu</option>
         <option value="pasta">Bestille ved bord</option>
       </select>
-       <button type="submit">Place Order</button>
+
+      <button type="submit">Place Order</button>
     </form>
+
     <div id="orderResult"></div>
+    <button id="returnHome">Return to Main Page</button>
+
+    <h2>Order History</h2>
+    <ul id="orderHistory"></ul>
   </main>
+
   <footer>
     <p>© 2025 Your Restaurant. All Rights Reserved.</p>
   </footer>
+
+  <script src="/Js/order.js"></script>
 </body>
 </html>
